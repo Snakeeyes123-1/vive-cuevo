@@ -1,265 +1,159 @@
-/* === Colores principales === */
-:root {
-  --verde: #355E3B;
-  --dorado: #C2A661;
-  --beige: #F5F1E3;
-  --carbon: #1C1C1C;
-  --blanco: #fff;
+/* === Paleta === */
+:root{
+  --verde:#355E3B;
+  --dorado:#C2A661;
+  --beige:#F5F1E3;
+  --carbon:#1C1C1C;
+  --blanco:#fff;
 }
 
-/* === General === */
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--blanco);
-  color: var(--carbon);
-  scroll-behavior: smooth;
-}
-
-/* === Navbar === */
-.navbar {
-  background: var(--verde);
-}
-
-.navbar-brand {
-  color: var(--dorado) !important;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.nav-link {
-  color: var(--beige) !important;
-  margin: 0 5px;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: var(--dorado) !important;
-}
-
-/* === Hero === */
-.hero {
-  height: 100vh;
-  background: linear-gradient(rgba(53, 94, 59, 0.6), rgba(0, 0, 0, 0.5)),
-              url('https://images.unsplash.com/photo-1523779110197-6bba14163f74?auto=format&fit=crop&w=1500&q=80') center/cover fixed;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
-}
-
-.hero h1 {
-  font-size: 3.2rem;
-  color: var(--beige);
-}
-
-.hero p {
-  color: var(--beige);
-}
-
-/* === Botones personalizados === */
-.btn-gold {
-  background-color: var(--dorado);
-  color: var(--carbon);
-  border-radius: 25px;
-  border: none;
-  transition: all 0.3s ease;
-}
-
-.btn-gold:hover {
-  background-color: var(--verde);
-  color: var(--beige);
-}
-
-.btn-outline-gold {
-  border: 2px solid var(--dorado);
-  color: var(--dorado);
-  border-radius: 25px;
-}
-
-.btn-outline-gold:hover {
-  background-color: var(--dorado);
-  color: var(--carbon);
-}
-
-/* === Cards personalizadas === */
-.card-custom {
-  border: none;
-  border-radius: 15px;
-  transition: all 0.3s ease;
-  background-color: var(--blanco);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card-custom:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-/* === Modales === */
-.bg-gold {
-  background-color: var(--dorado) !important;
-}
-
-.modal-content {
-  border-radius: 15px;
-  border: none;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-}
-
-/* === Footer === */
-footer {
-  background: var(--verde);
-  color: var(--beige);
-  font-size: 0.9rem;
-}
-
-/* === Animaciones === */
-[data-aos] {
-  transition: all 0.8s ease;
+/* === Base === */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background-color:var(--blanco);
+  color:var(--carbon);
 }
 
 /* Márgenes de scroll para que la navbar no tape los títulos */
-section {
-  scroll-margin-top: 80px;
-}
-
-/* Estilo general de títulos de sección */
-section h2 {
-  color: var(--verde);
-  border-bottom: 3px solid var(--dorado);
-  display: inline-block;
-  padding-bottom: 4px;
-}
+section{scroll-margin-top:90px}
 
 /* Subtítulo de sección */
-.section-subtitle {
-  max-width: 750px;
-  margin: 0 auto;
-  color: #555;
-  font-size: 0.98rem;
+.section-subtitle{
+  color:#6c757d;
+  max-width:920px;
+  margin-inline:auto;
+  font-size:.98rem;
 }
 
-/* Fondo beige para secciones claras */
-.bg-light {
-  background-color: var(--beige) !important;
+/* === Navbar === */
+.navbar{
+  background: rgba(0,0,0,.6);
+  backdrop-filter: saturate(140%) blur(8px);
+}
+.navbar-brand{color:var(--dorado)!important; font-weight:700; letter-spacing:.5px;}
+.nav-link{color:#fff!important; margin:0 6px; transition:color .25s ease;}
+.nav-link.active, .nav-link:hover, .nav-link:focus{color:var(--dorado)!important}
+
+/* === Hero === */
+.hero{
+  min-height:70vh;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.45)),
+    url('images/Visita/hero.jpg') center/cover no-repeat fixed;
+  text-shadow:1px 1px 5px rgba(0,0,0,.6);
+}
+.hero h1{font-size:3.2rem; color:var(--beige)}
+.hero p{color:var(--beige)}
+@media (max-width:768px){
+  .hero{min-height:80vh}
+  .hero h1{font-size:2.4rem}
 }
 
-/* Texto de cards un poco más fino */
-.card-body p {
-  font-size: 0.95rem;
+/* === Botones === */
+.btn-gold{
+  background:var(--dorado);
+  color:var(--carbon);
+  border:none;
+  border-radius:25px;
+  transition:filter .25s ease, transform .1s ease;
+}
+.btn-gold:hover{filter:brightness(.95)}
+.btn-gold:active{transform:translateY(1px)}
+
+.btn-outline-gold{
+  color:var(--dorado);
+  border:2px solid var(--dorado);
+  border-radius:25px;
+  background:transparent;
+  transition:all .25s ease;
+}
+.btn-outline-gold:hover{
+  background:var(--dorado);
+  color:var(--carbon);
 }
 
-/* === Carruseles en modales (hoteles, comidas, quesos, historias) === */
+/* === Secciones y tarjetas === */
+.bg-light{background-color:var(--beige)!important}
+section h2{
+  color:var(--verde);
+  border-bottom:3px solid var(--dorado);
+  display:inline-block;
+  padding-bottom:4px;
+}
+.card-custom{
+  border:1px solid #eee;
+  border-radius:16px;
+  background:var(--blanco);
+  box-shadow:0 5px 15px rgba(0,0,0,.08);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.card-custom:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,.16);
+}
+.card-custom .card-title{margin-bottom:.35rem}
+.card-body p{font-size:.95rem}
 
-/* Imágenes */
-.modal-carousel img,
-.hotel-carousel img {
-  width: 100%;
-  height: auto;
-  max-height: 420px;
-  object-fit: cover;
-  border-radius: 15px;
+/* === Modales === */
+.bg-gold{background:var(--dorado)!important}
+.modal-content{
+  border-radius:15px;
+  border:none;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
 
-/* Controles */
+/* === Carruseles (modales y hoteles) === */
+.hotel-carousel img,
+.modal-carousel img{
+  width:100%;
+  height:360px;
+  object-fit:cover;
+  border-radius:15px;
+}
+@media (min-width:992px){
+  .hotel-carousel img,
+  .modal-carousel img{height:420px}
+}
 .modal-carousel .carousel-control-prev,
 .modal-carousel .carousel-control-next,
 .hotel-carousel .carousel-control-prev,
-.hotel-carousel .carousel-control-next {
-  width: 8%;
-}
-
+.hotel-carousel .carousel-control-next{width:8%}
 .modal-carousel .carousel-control-prev-icon,
 .modal-carousel .carousel-control-next-icon,
 .hotel-carousel .carousel-control-prev-icon,
-.hotel-carousel .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.55);
-  border-radius: 50%;
-  padding: 12px;
-  background-size: 60% 60%;
+.hotel-carousel .carousel-control-next-icon{
+  background-color:rgba(0,0,0,.55);
+  border-radius:50%;
+  padding:12px;
+  background-size:60% 60%;
 }
-
-/* Indicadores */
 .modal-carousel .carousel-indicators,
-.hotel-carousel .carousel-indicators {
-  bottom: -28px;
-}
-
+.hotel-carousel .carousel-indicators{bottom:-28px}
 .modal-carousel .carousel-indicators [data-bs-target],
-.hotel-carousel .carousel-indicators [data-bs-target] {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--dorado);
-  opacity: 0.5;
+.hotel-carousel .carousel-indicators [data-bs-target]{
+  width:10px; height:10px; border-radius:50%;
+  background-color:var(--dorado); opacity:.5;
 }
-
 .modal-carousel .carousel-indicators .active,
-.hotel-carousel .carousel-indicators .active {
-  opacity: 1;
-}
+.hotel-carousel .carousel-indicators .active{opacity:1}
 
-/* Caption sutil sobre la foto */
+/* Caption sutil */
 .modal-carousel .carousel-caption,
-.hotel-carousel .carousel-caption {
-  background: rgba(0, 0, 0, 0.45);
-  border-radius: 8px;
-  padding: 0.35rem 0.75rem;
-  font-size: 0.85rem;
+.hotel-carousel .carousel-caption{
+  background:rgba(0,0,0,.45);
+  border-radius:8px;
+  padding:.35rem .75rem;
+  font-size:.85rem;
 }
 
-/* Ajustes responsive básicos */
-@media (max-width: 768px) {
-  .hero {
-    height: 80vh;
-  }
-}
-/* Tipografía y base */
-body { font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
-.section-subtitle { color: #6c757d; max-width: 920px; margin-inline: auto; }
-
-/* Navbar */
-.navbar { background: rgba(0,0,0,.6); backdrop-filter: saturate(140%) blur(8px); }
-.navbar .nav-link { color: #fff; }
-.navbar .nav-link:hover, .navbar .nav-link:focus { color: #f9d36a; }
-
-/* Hero (fondo opcional con imagen) */
-.hero {
-  min-height: 70vh;
-  background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.45)),
-              url('images/Visita/hero.jpg') center/cover no-repeat;
+/* === Footer === */
+footer{
+  background:var(--verde);
+  color:var(--beige);
+  font-size:.9rem;
 }
 
-/* Botones dorados */
-.btn-gold {
-  background: #f9d36a; color: #2b2b2b; border: none;
-}
-.btn-gold:hover { filter: brightness(0.95); }
-
-.btn-outline-gold {
-  color: #f9d36a; border: 1px solid #f9d36a;
-}
-.btn-outline-gold:hover { background: #f9d36a; color: #2b2b2b; }
-
-/* Cards */
-.card-custom { border: 1px solid #eee; border-radius: 16px; }
-.card-custom .card-title { margin-bottom: .35rem; }
-
-/* Modals */
-.bg-gold { background: #f9d36a !important; }
-
-/* Carruseles en modales/hoteles */
-.hotel-carousel img, .modal-carousel img {
-  width: 100%;
-  height: 360px;
-  object-fit: cover;
-}
-@media (min-width: 992px) {
-  .hotel-carousel img, .modal-carousel img { height: 420px; }
-}
-.carousel-indicators [data-bs-target] {
-  background-color: #2b2b2b;
-}
-
-/* Secciones */
-#hospedaje, #comidas, #queso, #historias, #juegos, #visita { scroll-margin-top: 90px; }
-
-/* Utilidades */
-.text-muted { color: #6c757d !important; }
+/* === AOS suavizado === */
+[data-aos]{transition:all .8s ease}
