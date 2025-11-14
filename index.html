@@ -1110,127 +1110,352 @@
     </div>
   </div>
 
-  <!-- TIPOS DE QUESOS -->
+    <!-- TIPOS DE QUESOS -->
   <section id="tipos-queso" class="py-5">
     <div class="container" data-aos="fade-up">
       <h2 class="text-center mb-3 fw-bold">🧀 Tipos de Quesos Chaqueños</h2>
       <p class="section-subtitle text-center mb-5">
-        En Cuevo se producen diferentes tipos de quesos, cada uno con su textura, sabor y forma particular.
-        Todos comparten algo en común: la leche de ganado adaptado al clima chaqueño y el trabajo de familias productoras.
+        Estos son algunos de los quesos elaborados en Cuevo, cada uno con características propias según su textura,
+        tiempo de maduración y forma de consumo. Todos nacen del trabajo de familias productoras del Chaco.
       </p>
 
-      <div class="row g-4">
+      <!-- Galería horizontal -->
+      <div class="cheese-gallery">
+        <!-- Queso compacto VATOs -->
+        <button class="card card-custom cheese-card" type="button"
+                data-bs-toggle="modal" data-bs-target="#quesoCompactoVatos">
+          <img src="images/Ruta-Queso-Chaqueño/QuesoCompacto_GranjaAgroturisticaVATOs.jpg"
+               alt="Queso compacto de la Granja VATOs" class="cheese-thumb" loading="lazy" decoding="async">
+          <div class="card-body text-center">
+            <span class="cheese-tag">Granja VATOs</span>
+            <h5 class="card-title mt-2">Queso compacto</h5>
+            <p class="text-muted mb-0">Queso de masa firme, pensado para consumo diario y tablas sencillas.</p>
+          </div>
+        </button>
+
+        <!-- Queso compacto cuadrado Hacienda Guaraygue -->
+        <button class="card card-custom cheese-card" type="button"
+                data-bs-toggle="modal" data-bs-target="#quesoCompactoCuadrado">
+          <img src="images/Ruta-Queso-Chaqueño/QuesoCompactoCuadrado_HaciendaGuaraygue.jpg"
+               alt="Queso compacto cuadrado Hacienda Guaraygue" class="cheese-thumb" loading="lazy" decoding="async">
+          <div class="card-body text-center">
+            <span class="cheese-tag">Hacienda Guaraygue</span>
+            <h5 class="card-title mt-2">Queso compacto cuadrado</h5>
+            <p class="text-muted mb-0">Formato cuadrado, fácil de cortar y porcionar en bandejas.</p>
+          </div>
+        </button>
+
+        <!-- Queso compacto redondo Hacienda Guaraygue -->
+        <button class="card card-custom cheese-card" type="button"
+                data-bs-toggle="modal" data-bs-target="#quesoCompactoRedondo">
+          <img src="images/Ruta-Queso-Chaqueño/QuesoCompactoRedondo_HaciendaGuaraygue.png"
+               alt="Queso compacto redondo Hacienda Guaraygue" class="cheese-thumb" loading="lazy" decoding="async">
+          <div class="card-body text-center">
+            <span class="cheese-tag">Hacienda Guaraygue</span>
+            <h5 class="card-title mt-2">Queso compacto redondo</h5>
+            <p class="text-muted mb-0">Pieza redonda tradicional, ideal para madurar o consumir fresco.</p>
+          </div>
+        </button>
+
+        <!-- Queso con ají -->
+        <button class="card card-custom cheese-card" type="button"
+                data-bs-toggle="modal" data-bs-target="#quesoConAji">
+          <img src="images/Ruta-Queso-Chaqueño/QuesoConAji_GranjaAgroturisticaVATOs.jpg"
+               alt="Queso con ají de la Granja VATOs" class="cheese-thumb" loading="lazy" decoding="async">
+          <div class="card-body text-center">
+            <span class="cheese-tag">Granja VATOs</span>
+            <h5 class="card-title mt-2">Queso con ají</h5>
+            <p class="text-muted mb-0">Queso con toques picantes, pensado para quienes buscan más intensidad.</p>
+          </div>
+        </button>
+
+        <!-- Queso con orégano -->
+        <button class="card card-custom cheese-card" type="button"
+                data-bs-toggle="modal" data-bs-target="#quesoConOregano">
+          <img src="images/Ruta-Queso-Chaqueño/QuesoConOregano_GrancaAgroturisticaVATOs.png"
+               alt="Queso con orégano de la Granja VATOs" class="cheese-thumb" loading="lazy" decoding="async">
+          <div class="card-body text-center">
+            <span class="cheese-tag">Granja VATOs</span>
+            <h5 class="card-title mt-2">Queso con orégano</h5>
+            <p class="text-muted mb-0">Queso aromatizado con hierbas, perfecto para picadas y panes caseros.</p>
+          </div>
+        </button>
 
         <!-- Queso estirado -->
-        <div class="col-md-4" data-aos="zoom-in">
-          <div class="card card-custom h-100 cheese-type-card">
-            <img src="images/Ruta-Queso-Chaqueño/QuesoEstirado_GranjaAgroturisticaVATOs.jpg"
-                 class="cheese-img-top"
-                 alt="Queso estirado de Cuevo" loading="lazy" decoding="async">
-            <div class="card-body text-center">
-              <span class="cheese-tag">Especialidad de Cuevo</span>
-              <h5 class="card-title mt-2">Queso estirado</h5>
-              <p class="text-muted mb-0">
-                Queso de textura elástica, ideal para fundir y estirar. 
-                Es el protagonista del récord del queso más largo de Bolivia.
-              </p>
-            </div>
+        <button class="card card-custom cheese-card" type="button"
+                data-bs-toggle="modal" data-bs-target="#quesoEstirado">
+          <img src="images/Ruta-Queso-Chaqueño/QuesoEstirado_GranjaAgroturisticaVATOs.jpg"
+               alt="Queso estirado de Cuevo" class="cheese-thumb" loading="lazy" decoding="async">
+          <div class="card-body text-center">
+            <span class="cheese-tag">Especialidad de Cuevo</span>
+            <h5 class="card-title mt-2">Queso estirado</h5>
+            <p class="text-muted mb-0">El protagonista del récord del queso más largo de Bolivia.</p>
           </div>
-        </div>
+        </button>
 
-        <!-- Queso compacto -->
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="50">
-          <div class="card card-custom h-100 cheese-type-card">
-            <img src="images/Ruta-Queso-Chaqueño/QuesoCompactoRedondo_HaciendaGuaraygue.png"
-                 class="cheese-img-top"
-                 alt="Queso compacto" loading="lazy" decoding="async">
-            <div class="card-body text-center">
-              <span class="cheese-tag">Hacienda Guaraygue</span>
-              <h5 class="card-title mt-2">Queso compacto</h5>
-              <p class="text-muted mb-0">
-                Queso de masa firme, en forma redonda o cuadrada. 
-                Aporta sabor intenso y es ideal para picadas y tablas.
-              </p>
-            </div>
+        <!-- Queso madurado -->
+        <button class="card card-custom cheese-card" type="button"
+                data-bs-toggle="modal" data-bs-target="#quesoMadurado">
+          <img src="images/Ruta-Queso-Chaqueño/QuesoMadurado_HaciendaGuaraygue.jpg"
+               alt="Queso madurado Hacienda Guaraygue" class="cheese-thumb" loading="lazy" decoding="async">
+          <div class="card-body text-center">
+            <span class="cheese-tag">Hacienda Guaraygue</span>
+            <h5 class="card-title mt-2">Queso madurado</h5>
+            <p class="text-muted mb-0">Piezas que desarrollan sabores más complejos con el tiempo.</p>
           </div>
-        </div>
+        </button>
 
         <!-- Requesón cremoso -->
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-          <div class="card card-custom h-100 cheese-type-card">
-            <img src="images/Ruta-Queso-Chaqueño/RequesonCremoso_GranjaAgroturisticaVATOs.png"
-                 class="cheese-img-top"
-                 alt="Requesón cremoso" loading="lazy" decoding="async">
-            <div class="card-body text-center">
-              <span class="cheese-tag">Granja VATOs</span>
-              <h5 class="card-title mt-2">Requesón cremoso</h5>
-              <p class="text-muted mb-0">
-                De textura suave y untuosa, se utiliza en desayunos, postres 
-                y preparaciones dulces o saladas.
-              </p>
-            </div>
+        <button class="card card-custom cheese-card" type="button"
+                data-bs-toggle="modal" data-bs-target="#requesonCremoso">
+          <img src="images/Ruta-Queso-Chaqueño/RequesonCremoso_GranjaAgroturisticaVATOs.png"
+               alt="Requesón cremoso de la Granja VATOs" class="cheese-thumb" loading="lazy" decoding="async">
+          <div class="card-body text-center">
+            <span class="cheese-tag">Granja VATOs</span>
+            <h5 class="card-title mt-2">Requesón cremoso</h5>
+            <p class="text-muted mb-0">Textura suave y untuosa, ideal para desayunos y postres.</p>
           </div>
-        </div>
-
-        <!-- Queso con orégano y ají -->
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
-          <div class="card card-custom h-100 cheese-type-card">
-            <img src="images/Ruta-Queso-Chaqueño/QuesoConOregano_GrancaAgroturisticaVATOs.png"
-                 class="cheese-img-top"
-                 alt="Queso con orégano" loading="lazy" decoding="async">
-            <div class="card-body text-center">
-              <span class="cheese-tag">Sabores agregados</span>
-              <h5 class="card-title mt-2">Queso con orégano y ají</h5>
-              <p class="text-muted mb-0">
-                Quesos sazonados con hierbas y ají, perfectos para quienes
-                buscan un sabor más intenso y aromático.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Queso molde / fresco -->
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-          <div class="card card-custom h-100 cheese-type-card">
-            <img src="images/Ruta-Queso-Chaqueño/QuesoMolde_Ejemplo.png"
-                 class="cheese-img-top"
-                 alt="Queso molde fresco" loading="lazy" decoding="async">
-            <div class="card-body text-center">
-              <span class="cheese-tag">Consumo diario</span>
-              <h5 class="card-title mt-2">Queso molde fresco</h5>
-              <p class="text-muted mb-0">
-                Queso suave y de consumo cotidiano, ideal para sándwiches,
-                rellenos y acompañar las comidas de todos los días.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Quesos madurados -->
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="250">
-          <div class="card card-custom h-100 cheese-type-card">
-            <img src="images/Ruta-Queso-Chaqueño/QuesosMadurados_Ejemplo.png"
-                 class="cheese-img-top"
-                 alt="Quesos madurados" loading="lazy" decoding="async">
-            <div class="card-body text-center">
-              <span class="cheese-tag">Mayor tiempo de curado</span>
-              <h5 class="card-title mt-2">Quesos madurados</h5>
-              <p class="text-muted mb-0">
-                Quesos que pasan por un proceso de maduración, desarrollando 
-                aromas y sabores más complejos y profundos.
-              </p>
-            </div>
-          </div>
-        </div>
-
+        </button>
       </div>
 
       <p class="mt-4 text-center small text-muted">
-        *Las fotografías corresponden a productores locales y son una muestra referencial
-        de la diversidad quesera del municipio de Cuevo.
+        *Las fotografías corresponden a productores locales del municipio de Cuevo.
       </p>
     </div>
   </section>
+
+    <!-- MODALES TIPOS DE QUESO -->
+
+  <!-- Queso compacto VATOs -->
+  <div class="modal fade" id="quesoCompactoVatos" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-gold text-dark">
+          <h5 class="modal-title fw-bold">Queso compacto – Granja Agroturística VATOs</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body row gy-3 align-items-center">
+          <div class="col-lg-5">
+            <p>
+              El queso compacto de la Granja VATOs se elabora con leche fresca de vacas criadas en el Chaco,
+              siguiendo procesos artesanales que respetan la temperatura y el punto de cuajado.
+            </p>
+            <p>
+              Su textura firme permite cortarlo en láminas o cubos, por lo que es ideal para sándwiches,
+              picadas y acompañar platos típicos de la región.
+            </p>
+          </div>
+          <div class="col-lg-7 text-center">
+            <img src="images/Ruta-Queso-Chaqueño/QuesoCompacto_GranjaAgroturisticaVATOs.jpg"
+                 alt="Queso compacto de la Granja VATOs"
+                 class="modal-cheese-img" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Queso compacto cuadrado -->
+  <div class="modal fade" id="quesoCompactoCuadrado" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-gold text-dark">
+          <h5 class="modal-title fw-bold">Queso compacto cuadrado – Hacienda Guaraygue</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body row gy-3 align-items-center">
+          <div class="col-lg-5">
+            <p>
+              En su formato cuadrado, el queso compacto de la Hacienda Guaraygue facilita el corte y el
+              almacenamiento, manteniendo una textura densa y un sabor equilibrado.
+            </p>
+            <p>
+              Es utilizado tanto en el consumo familiar como en servicios de alimentación, gracias a su
+              rendimiento y facilidad para porcionar.
+            </p>
+          </div>
+          <div class="col-lg-7 text-center">
+            <img src="images/Ruta-Queso-Chaqueño/QuesoCompactoCuadrado_HaciendaGuaraygue.jpg"
+                 alt="Queso compacto cuadrado Hacienda Guaraygue"
+                 class="modal-cheese-img" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Queso compacto redondo -->
+  <div class="modal fade" id="quesoCompactoRedondo" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-gold text-dark">
+          <h5 class="modal-title fw-bold">Queso compacto redondo – Hacienda Guaraygue</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body row gy-3 align-items-center">
+          <div class="col-lg-5">
+            <p>
+              El queso compacto redondo conserva la forma tradicional de las piezas elaboradas en la zona.
+              Puede consumirse fresco o destinarse a procesos de maduración.
+            </p>
+            <p>
+              Su corte presenta una pasta homogénea, con aromas lácteos suaves y un sabor que se intensifica
+              conforme avanza el tiempo de curado.
+            </p>
+          </div>
+          <div class="col-lg-7 text-center">
+            <img src="images/Ruta-Queso-Chaqueño/QuesoCompactoRedondo_HaciendaGuaraygue.png"
+                 alt="Queso compacto redondo Hacienda Guaraygue"
+                 class="modal-cheese-img" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Queso con ají -->
+  <div class="modal fade" id="quesoConAji" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-gold text-dark">
+          <h5 class="modal-title fw-bold">Queso con ají – Granja Agroturística VATOs</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body row gy-3 align-items-center">
+          <div class="col-lg-5">
+            <p>
+              Este queso incorpora ají picado en la masa, logrando un sabor más intenso y característico del
+              gusto chaqueño por los sabores fuertes.
+            </p>
+            <p>
+              Suele servirse en rodajas finas para acompañar panes, asados y picadas, aportando un toque
+              picante al plato.
+            </p>
+          </div>
+          <div class="col-lg-7 text-center">
+            <img src="images/Ruta-Queso-Chaqueño/QuesoConAji_GranjaAgroturisticaVATOs.jpg"
+                 alt="Queso con ají de la Granja VATOs"
+                 class="modal-cheese-img" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Queso con orégano -->
+  <div class="modal fade" id="quesoConOregano" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-gold text-dark">
+          <h5 class="modal-title fw-bold">Queso con orégano – Granja Agroturística VATOs</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body row gy-3 align-items-center">
+          <div class="col-lg-5">
+            <p>
+              El queso con orégano combina la pasta láctea con hierbas aromáticas, resultando en un producto
+              muy apreciado para picadas, tostadas y pizzas caseras.
+            </p>
+            <p>
+              Su aroma recuerda a las cocinas familiares del Chaco, donde el queso es parte esencial de la mesa.
+            </p>
+          </div>
+          <div class="col-lg-7 text-center">
+            <img src="images/Ruta-Queso-Chaqueño/QuesoConOregano_GrancaAgroturisticaVATOs.png"
+                 alt="Queso con orégano de la Granja VATOs"
+                 class="modal-cheese-img" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Queso estirado -->
+  <div class="modal fade" id="quesoEstirado" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-gold text-dark">
+          <h5 class="modal-title fw-bold">Queso estirado – Especialidad de Cuevo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body row gy-3 align-items-center">
+          <div class="col-lg-5">
+            <p>
+              El queso estirado es el símbolo del Festival de la Leche y el Queso Chaqueño. Su masa elástica permite
+              trabajarlo en largas tiras que, en conjunto, forman el queso más largo del país.
+            </p>
+            <p>
+              Su textura lo hace ideal para fundir y para preparaciones calientes. El récord alcanzado en 2025 llegó
+              a 166 metros de longitud.
+            </p>
+          </div>
+          <div class="col-lg-7 text-center">
+            <img src="images/Ruta-Queso-Chaqueño/QuesoEstirado_GranjaAgroturisticaVATOs.jpg"
+                 alt="Queso estirado de Cuevo"
+                 class="modal-cheese-img" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Queso madurado -->
+  <div class="modal fade" id="quesoMadurado" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-gold text-dark">
+          <h5 class="modal-title fw-bold">Queso madurado – Hacienda Guaraygue</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body row gy-3 align-items-center">
+          <div class="col-lg-5">
+            <p>
+              Los quesos madurados de la Hacienda Guaraygue pasan por un periodo de curado controlado, durante el cual
+              desarrollan aromas y sabores más complejos.
+            </p>
+            <p>
+              Se recomiendan para tablas especiales, maridajes con vinos y degustaciones donde se puedan apreciar
+              sus matices.
+            </p>
+          </div>
+          <div class="col-lg-7 text-center">
+            <img src="images/Ruta-Queso-Chaqueño/QuesoMadurado_HaciendaGuaraygue.jpg"
+                 alt="Queso madurado Hacienda Guaraygue"
+                 class="modal-cheese-img" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Requesón cremoso -->
+  <div class="modal fade" id="requesonCremoso" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-gold text-dark">
+          <h5 class="modal-title fw-bold">Requesón cremoso – Granja Agroturística VATOs</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body row gy-3 align-items-center">
+          <div class="col-lg-5">
+            <p>
+              El requesón cremoso se obtiene a partir del suero de la leche. Su textura suave permite usarlo en rellenos,
+              postres y desayunos, combinado con frutas, miel o mermeladas.
+            </p>
+            <p>
+              Es una forma de aprovechar al máximo la leche, reduciendo desperdicios y ampliando la variedad de productos
+              lácteos disponibles.
+            </p>
+          </div>
+          <div class="col-lg-7 text-center">
+            <img src="images/Ruta-Queso-Chaqueño/RequesonCremoso_GranjaAgroturisticaVATOs.png"
+                 alt="Requesón cremoso de la Granja VATOs"
+                 class="modal-cheese-img" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- HISTORIAS DE VIDA -->
 <section id="historias" class="py-5">
